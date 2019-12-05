@@ -474,6 +474,24 @@
             "url": "https://aka.ms/sls76s"
           }
         },
+        "ConnectionString": {
+          "type": "string",
+          "description": "Application Insights component connection string.",
+          "readOnly": true
+        },
+        "RetentionInDays": {
+          "type": "integer",
+          "description": "Retention period in days.",
+          "default": 90
+        },
+        "DisableIpMasking": {
+          "type": "boolean",
+          "description": "Disable IP masking."
+        },
+        "ImmediatePurgeDataOn30Days": {
+          "type": "boolean",
+          "description": "Purge data immediately after 30 days."
+        },
         "provisioningState": {
           "type": "string",
           "description": "Current state of this component: whether or not is has been provisioned within the resource group it is defined. Users cannot change this value but are able to read from it. Values will include Succeeded, Deploying, Canceled, and Failed.",
